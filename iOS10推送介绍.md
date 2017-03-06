@@ -2,8 +2,9 @@
 -
 ###概览
 iOS10之后，苹果重新定义了通知的界面，下图是iOS10的新界面：
-<p align="center"><img width="480" src="推送/3.png"/></p> 
-<p align="center"><img width="480" src="推送/2.png"/></p> 
+<p align="center"><img height="480" src="推送/3.png"/></p> 
+
+<p align="center"><img height="480" src="推送/2.png"/></p> 
 
 iOS10的推送丰富了用户反馈的途径，支持3d touch的手机可以通过3d touch来对通知进行响应，开发者还能对通知详情的界面进行自定义，使app的交互更多样化。不仅如此，iOS10之后的推送还能显示图片等多媒体资料。
 
@@ -186,8 +187,8 @@ private func checkAuthorization() {
     }
 	```
 	实际运行效果如下：
-	<p align="center"><img width="480" src="推送/6.png"/></p> 
-	<p align="center"><img width="480" src="推送/7.png"/></p> 
+	<p align="center"><img height="480" src="推送/6.png"/></p> 
+	<p align="center"><img height="480" src="推送/7.png"/></p> 
 	
 更酷的东西在下面，假如我们想完全自定义通知显示的界面，那又怎么做呢？
 
@@ -225,7 +226,7 @@ private func checkAuthorization() {
 + 修改plist中的UNNotificationExtensionCategory属性值，改成之前创建的categoryIdentifier，让UI跟你的category对应上。
 	<p align="center"><img width="480" src="推送/10.png"/></p> 
 至此所有配置已经完成，实际效果如下：
- <p align="center"><img width="480" src="推送/11.png"/></p> 
+ <p align="center"><img height="480" src="推送/11.png"/></p> 
 ###远程推送
  <p align="center"><img width="480" src="推送/5.png"/></p> 
  	远程推送跟本地推送不一样，远程推送需要Apple Push Notification Service(APNs)以及服务器端程序的配合。这里由于篇幅原因远程推送的原理、怎么配置推送证书暂不介绍，很多第三方平台中均有详细介绍，这里推荐两个第三方推送的平台，在实际项目中使用过效果都不错：
