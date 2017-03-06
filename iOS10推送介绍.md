@@ -2,9 +2,9 @@
 -
 ###概览
 iOS10之后，苹果重新定义了通知的界面，下图是iOS10的新界面：
+<p align="center"><img width="480" src="推送/3.png"/></p> 
+<p align="center"><img width="480" src="推送/2.png"/></p> 
 
-![](推送/3.png)
-![](推送/2.png)
 iOS10的推送丰富了用户反馈的途径，支持3d touch的手机可以通过3d touch来对通知进行响应，开发者还能对通知详情的界面进行自定义，使app的交互更多样化。不仅如此，iOS10之后的推送还能显示图片等多媒体资料。
 
 
@@ -22,7 +22,7 @@ iOS的推送分为本地推送跟远程推送，iOS10之后苹果把本地推送
 ###本地推送
 
 本地推送不需要通过网络，触发的条件可以是定时的，也可以是定点的。本地推送能在后台或者app运行时触发，iOS10之后，alert（或者banner）能在app前台显示。所有的推送由iOS的通知中心管理。
-![](推送/4.png)
+<p align="center"><img width="480" src="推送/4.png"/></p> 
 下面通过一个demo来演示本地推送的使用。
 
 + 请求用户同意接收推送.（记得先
@@ -186,20 +186,23 @@ private func checkAuthorization() {
     }
 	```
 	实际运行效果如下：
-	![](推送/6.png)
-	![](推送/7.png)
+	<p align="center"><img width="480" src="推送/6.png"/></p> 
+	<p align="center"><img width="480" src="推送/7.png"/></p> 
 	
 更酷的东西在下面，假如我们想完全自定义通知显示的界面，那又怎么做呢？
 
 + 自定义通知显示界面
-	![](推送/2.png)
+<p align="center"><img width="480" src="推送/2.png"/></p> 
+
 	这种完全自定义的界面是通过Notification Content Extension来实现的。下面通过实例简单介绍怎么操作。
 	
 	+ 为app添加extension：file->new->target,选择Notification content,如下图：
-	![](推送/8.png)
-	2. 在新出现的extension文件中的storyboard自定义界面，这里简单定义如下：
-	 ![](推送/9.png)
- 1. 在对应的ViewController中修改didReceive:notification方法，实例中逻辑比较简单，只需要显示图片，代码如下：
+	<p align="center"><img width="480" src="推送/8.png"/></p> 
+	
+	+ 在新出现的extension文件中的storyboard自定义界面，这里简单定义如下：
+	<p align="center"><img width="480" src="推送/9.png"/></p> 
+	
+ 	+ 在对应的ViewController中修改didReceive:notification方法，实例中逻辑比较简单，只需要显示图片，代码如下：
  
  	```Swift
  	func didReceive(_ notification: UNNotification) {
@@ -220,12 +223,11 @@ private func checkAuthorization() {
     }
  	```
 + 修改plist中的UNNotificationExtensionCategory属性值，改成之前创建的categoryIdentifier，让UI跟你的category对应上。
-	![](推送/10.png)
+	<p align="center"><img width="480" src="推送/10.png"/></p> 
 至此所有配置已经完成，实际效果如下：
-	![](推送/11.png)
- 
+ <p align="center"><img width="480" src="推送/11.png"/></p> 
 ###远程推送
- ![](推送/5.png)
+ <p align="center"><img width="480" src="推送/5.png"/></p> 
  	远程推送跟本地推送不一样，远程推送需要Apple Push Notification Service(APNs)以及服务器端程序的配合。这里由于篇幅原因远程推送的原理、怎么配置推送证书暂不介绍，很多第三方平台中均有详细介绍，这里推荐两个第三方推送的平台，在实际项目中使用过效果都不错：
  	[友盟推送] (http://dev.umeng.com/push/ios/integration)
 [极光推送] (http://docs.jiguang.cn/jpush/client/iOS/ios_sdk/)
