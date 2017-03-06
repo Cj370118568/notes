@@ -2,9 +2,8 @@
 -
 ###概览
 iOS10之后，苹果重新定义了通知的界面，下图是iOS10的新界面：
-<p align="center"><img height="480" src="推送/3.png"/></p> 
+<p align="center"><img height="480" src="推送/3.png"/><img height="480" src="推送/2.png"/></p> 
 
-<p align="center"><img height="480" src="推送/2.png"/></p> 
 
 iOS10的推送丰富了用户反馈的途径，支持3d touch的手机可以通过3d touch来对通知进行响应，开发者还能对通知详情的界面进行自定义，使app的交互更多样化。不仅如此，iOS10之后的推送还能显示图片等多媒体资料。
 
@@ -187,18 +186,17 @@ private func checkAuthorization() {
     }
 	```
 	实际运行效果如下：
-	<p align="center"><img height="480" src="推送/6.png"/></p> 
-	<p align="center"><img height="480" src="推送/7.png"/></p> 
+	<p align="center"><img height="480" src="推送/6.png"/><img height="480" src="推送/7.png"/></p> 
 	
 更酷的东西在下面，假如我们想完全自定义通知显示的界面，那又怎么做呢？
 
 + 自定义通知显示界面
-<p align="center"><img width="480" src="推送/2.png"/></p> 
+<p align="center"><img Height="480" src="推送/2.png"/></p> 
 
 	这种完全自定义的界面是通过Notification Content Extension来实现的。下面通过实例简单介绍怎么操作。
 	
 	+ 为app添加extension：file->new->target,选择Notification content,如下图：
-	<p align="center"><img width="480" src="推送/8.png"/></p> 
+	<p align="center"><img height="480" src="推送/8.png"/></p> 
 	
 	+ 在新出现的extension文件中的storyboard自定义界面，这里简单定义如下：
 	<p align="center"><img width="480" src="推送/9.png"/></p> 
