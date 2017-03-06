@@ -26,8 +26,7 @@ iOS的推送分为本地推送跟远程推送，iOS10之后苹果把本地推送
 下面通过一个demo来演示本地推送的使用。
 
 + 请求用户同意接收推送.（记得先
-```import UserNotifications
-```）
+```import UserNotifications```）
 
 ```Swift
 private func checkAuthorization() {
@@ -220,9 +219,9 @@ private func checkAuthorization() {
         self.view.setNeedsLayout()
     }
  	```
-	+ 修改plist中的UNNotificationExtensionCategory属性值，改成之前创建的categoryIdentifier，让UI跟你的category对应上。
++ 修改plist中的UNNotificationExtensionCategory属性值，改成之前创建的categoryIdentifier，让UI跟你的category对应上。
 	![](推送/10.png)
-	至此所有配置已经完成，实际效果如下：
+至此所有配置已经完成，实际效果如下：
 	![](推送/11.png)
  
 ###远程推送
@@ -235,7 +234,7 @@ private func checkAuthorization() {
 
 
 ###总结
-本文iOS10后的推送新特性通过一个demo进行概括性的介绍。[点击下载源代码]()
+本文iOS10后的推送新特性通过一个demo进行概括性的介绍。[点击下载源代码](https://github.com/Cj370118568/notes/archive/master.zip)
 ###参考
 + Programming iOS10 chapter 13
 + WWDC Session 708 Advanced Notifications
