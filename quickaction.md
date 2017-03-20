@@ -3,7 +3,7 @@
 -
 ###概览
 iPhone 6s以上的设备都支持3d touch，在支持3d touch的设备上使用Quick Actions会有比较好的体验，丰富了交互方式。
-<p align="center"><img height="480" src="3dtouch/1.png"/></p> 
+<p align="center"><img height="480" src="3dtouch/1.PNG"/></p> 
 
 
 + quick actions分为两种
@@ -20,7 +20,8 @@ iPhone 6s以上的设备都支持3d touch，在支持3d touch的设备上使用Q
 	
 + 当用户点击一个quick action，app delegate的方法```
 func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void)
-```会被调用（必要时app会启动）。
+```
+会被调用（必要时app会启动）。
 
 + 每一个quick action都是由UIApplicationShortcutItem的对象定义的。UIApplicationShortcutItem是一个简单的类，只有几个属性：
 
@@ -71,12 +72,12 @@ func application(_ application: UIApplication, performActionFor shortcutItem: UI
     </array>
 	```
 	或者：
-	<p align="center"><img width="480" src="3dtouch/2.png"/></p> 
+	<p align="center"><img width="480" src="3dtouch/2.PNG"/></p> 
 	
 	
 	
 	实际运行效果如下：
-	<p align="center"><img width="480" src="3dtouch/3.png"/></p> 
+	<p align="center"><img width="480" src="3dtouch/3.PNG"/></p> 
 	
 + 动态quick action
 
@@ -88,7 +89,7 @@ let item = UIApplicationShortcutItem(type: "demo.dynamic",
         UIApplication.shared.shortcutItems = [item]
 ```
 实际运行效果如下：
-	<p align="center"><img width="480" src="3dtouch/4.png"/></p> 
+	<p align="center"><img width="480" src="3dtouch/4.PNG"/></p> 
 + 响应quick action事件
 
 当用户点击quick action时，系统会调用```func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void)```这个方法，在里面进行响应就可以了
