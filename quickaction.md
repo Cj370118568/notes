@@ -74,7 +74,7 @@ func application(_ application: UIApplication, performActionFor shortcutItem: UI
     </array>
 	```
 	或者：
-	<p align="center"><img width="480" src="3dtouch/2.PNG"/></p> 
+	<p align="center"><img width="480" src="3dtouch/2.png"/></p> 
 	
 	
 	
