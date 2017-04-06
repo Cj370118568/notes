@@ -18,7 +18,8 @@ iPhone 6s以上的设备都支持3d touch，在支持3d touch的设备上使用Q
 		动态quick actions是通过代码定义的，如果你的app没有运行，动态quick actions是不会出现的。
 	
 	
-+ 当用户点击一个quick action，app delegate的方法```
++ 当用户点击一个quick action，app delegate的方法
+```
 func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void)
 ```
 会被调用（必要时app会启动）。
@@ -36,6 +37,7 @@ func application(_ application: UIApplication, performActionFor shortcutItem: UI
 	下面分别演示通过info.plist定义静态quick action以及通过代码定义动态quick action。
 	
 + 静态quick action
+
 	```Swift
 	 <key>UIApplicationShortcutItems</key>
     <array>
